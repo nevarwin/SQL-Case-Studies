@@ -148,3 +148,5 @@ Danny also requires further information about the ranking of customer products, 
 | C           | 2021-01-01 | ramen        | 12    | N      | null    |
 | C           | 2021-01-07 | ramen        | 12    | N      | null    |
 
+
+For more details, you can refer to [8 Week SQL Challenge - Case Study 1](https://8weeksqlchallenge.com/case-study-1/).
