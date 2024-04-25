@@ -2,6 +2,14 @@
 
 A solution to #8WeekSQLChallenge Case Study 1 by Danny Ma and the Data With Danny virtual data apprenticeship program.
 
+I started this case study in April 15-17 then resumes on April 22-25, 2024. I learned alot in this case study including all of this:
+- **Common Table Expressions**
+- **Group By Aggregates**
+- **Window Functions for ranking**
+- **Table Joins**
+
+The Window Functions is new to me. Also the use of ROW_NUMBER() and Common Table Expression (CTE). Reading the documentation and searching the web helps me on how to use these queries.
+
 ## Introduction
 
 Danny seriously loves Japanese food, so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favourite foods: sushi, curry, and ramen.
