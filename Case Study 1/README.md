@@ -1,4 +1,5 @@
 # Danny's Diner Case Study 1
+
 A solution to #8WeekSQLChallenge Case Study 1 by Danny Ma and the Data With Danny virtual data apprenticeship program.
 
 ## Introduction
@@ -24,7 +25,8 @@ Danny has shared with you 3 key datasets for this case study:
 You can inspect the entity relationship diagram and example data below.
 
 ## Entity Relationship Diagram
-![Danny's Diner ERD](https://example.com/dannys_diner.jpg)
+
+![Danny's Diner ERD](case study 1 erd.png)
 
 ## Example Datasets
 
@@ -35,7 +37,7 @@ All datasets exist within the `dannys_diner` database schema - be sure to includ
 The `sales` table captures all `customer_id` level purchases with corresponding `order_date` and `product_id` information for when and what menu items were ordered.
 
 | customer_id | order_date | product_id |
-|-------------|------------|------------|
+| ----------- | ---------- | ---------- |
 | A           | 2021-01-01 | 1          |
 | A           | 2021-01-01 | 2          |
 | A           | 2021-01-07 | 2          |
@@ -57,7 +59,7 @@ The `sales` table captures all `customer_id` level purchases with corresponding 
 The `menu` table maps the `product_id` to the actual `product_name` and `price` of each menu item.
 
 | product_id | product_name | price |
-|------------|--------------|-------|
+| ---------- | ------------ | ----- |
 | 1          | sushi        | 10    |
 | 2          | curry        | 15    |
 | 3          | ramen        | 12    |
@@ -67,35 +69,24 @@ The `menu` table maps the `product_id` to the actual `product_name` and `price` 
 The final `members` table captures the `join_date` when a `customer_id` joined the beta version of the Danny’s Diner loyalty program.
 
 | customer_id | join_date  |
-|-------------|------------|
+| ----------- | ---------- |
 | A           | 2021-01-07 |
 | B           | 2021-01-09 |
-
 
 ## Case Study Questions
 
 Each of the following case study questions can be answered using a single SQL statement:
 
 1. **What is the total amount each customer spent at the restaurant?**
-   
 2. **How many days has each customer visited the restaurant?**
-   
 3. **What was the first item from the menu purchased by each customer?**
-   
 4. **What is the most purchased item on the menu and how many times was it purchased by all customers?**
-   
 5. **Which item was the most popular for each customer?**
-   
 6. **Which item was purchased first by the customer after they became a member?**
-   
 7. **Which item was purchased just before the customer became a member?**
-   
 8. **What is the total items and amount spent for each member before they became a member?**
-   
 9. **If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?**
-   
 10. **In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?**
-
 
 ## Bonus Questions
 
@@ -106,7 +97,7 @@ The following questions are related to creating basic data tables that Danny and
 #### Recreate the following table output using the available data:
 
 | customer_id | order_date | product_name | price | member |
-|-------------|------------|--------------|-------|--------|
+| ----------- | ---------- | ------------ | ----- | ------ |
 | A           | 2021-01-01 | curry        | 15    | N      |
 | A           | 2021-01-01 | sushi        | 10    | N      |
 | A           | 2021-01-07 | curry        | 15    | Y      |
@@ -123,7 +114,6 @@ The following questions are related to creating basic data tables that Danny and
 | C           | 2021-01-01 | ramen        | 12    | N      |
 | C           | 2021-01-07 | ramen        | 12    | N      |
 
-
 ### Rank All The Things
 
 Danny also requires further information about the ranking of customer products, but he purposely does not need the ranking for non-member purchases, so he expects null ranking values for the records when customers are not yet part of the loyalty program.
@@ -131,7 +121,7 @@ Danny also requires further information about the ranking of customer products, 
 #### Recreate the following table output using the available data:
 
 | customer_id | order_date | product_name | price | member | ranking |
-|-------------|------------|--------------|-------|--------|---------|
+| ----------- | ---------- | ------------ | ----- | ------ | ------- |
 | A           | 2021-01-01 | curry        | 15    | N      | null    |
 | A           | 2021-01-01 | sushi        | 10    | N      | null    |
 | A           | 2021-01-07 | curry        | 15    | Y      | 1       |
@@ -147,6 +137,5 @@ Danny also requires further information about the ranking of customer products, 
 | C           | 2021-01-01 | ramen        | 12    | N      | null    |
 | C           | 2021-01-01 | ramen        | 12    | N      | null    |
 | C           | 2021-01-07 | ramen        | 12    | N      | null    |
-
 
 For more details, you can refer to [8 Week SQL Challenge - Case Study 1](https://8weeksqlchallenge.com/case-study-1/).
