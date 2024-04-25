@@ -220,12 +220,7 @@ WITH Membership AS (
  		END AS member
   	FROM 
   		(SELECT DISTINCT customer_id FROM dannys_diner.sales) c
-  	LEFT JOIN
-  		dannys_diner.sales s ON c.customer_id = s.customer_id
-  	LEFT JOIN
-  		dannys_diner.menu m ON s.product_id = m.product_id
-  	LEFT JOIN
-  		dannys_diner.members mem ON c.customer_id = mem.customer_id
+  	
 )
 SELECT
 	customer_id,
