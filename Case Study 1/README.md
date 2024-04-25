@@ -26,7 +26,7 @@ You can inspect the entity relationship diagram and example data below.
 
 ## Entity Relationship Diagram
 
-![Case Study 1 ERD](case_study_1_erd.png)
+![Case Study 1 ERD](case study 1 erd.png)
 
 ## Example Datasets
 
